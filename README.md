@@ -19,4 +19,4 @@ deployment and service for nginx.
 
 ## Makefile
 
-default action for make is to compile the program, build a docker image and add the resultant binary. Next the make file updates the test-deployment manifest using ```kubectl apply``` then terminates the existing pods. 
+default action for make is to compile the program, build a docker image and add the resultant binary. Next it updates the test-deployment manifest using ```kubectl apply``` then terminates the existing pods. 
