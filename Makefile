@@ -15,6 +15,6 @@ manifests:
 taint:
 	for pod in `kubectl get pods | grep testdep | awk '{print $$1}'`; do kubectl delete pods $$pod; done;
 
-.PHONY: clean
-clean:
+.PHONY: clean-manifests
+clean-manifests:
 	kubectl delete -f manifests/test-deployment.yaml
